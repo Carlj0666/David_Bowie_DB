@@ -1,1 +1,1 @@
-"David Bowie Album DB"
+"David Bowie DB"
