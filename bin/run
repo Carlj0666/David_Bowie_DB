@@ -2,4 +2,5 @@
 
 require_relative "../environment"
 
-puts "It's Alive!"
+cli_instance = CLI.new
+cli_instance.start
