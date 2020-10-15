@@ -1,4 +1,4 @@
-class Somthing
+class CLI
   
   
 end
