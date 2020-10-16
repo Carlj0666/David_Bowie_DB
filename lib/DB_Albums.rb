@@ -1,4 +1,4 @@
-class David_Bowie_DB
+class DB_Albums
   
   attr_accessor :name, :release_year, :description, :label
   

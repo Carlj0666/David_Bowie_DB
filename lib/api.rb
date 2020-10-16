@@ -9,9 +9,10 @@ class API
     albums_array = hash["album"]
     
     albums_array.each do |album|
-      binding.pry
-      record = David_Bowie_DB.new
+      
+      record = DB_Albums.new
       record.name = albums_array["strAlbum"]
+      binding.pry
     end
     
   end
