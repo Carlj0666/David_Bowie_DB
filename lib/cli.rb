@@ -13,8 +13,8 @@ class CLI
     
     sleep(1)
     puts "Type 'records' for a list of my albums"
-    sleep(1)
-    puts "Or type 'records_by_year' for a date sorted list of my albums"
+    # sleep(1)
+    # puts "Or type 'records_by_year' for a date sorted list of my albums"
     
     user_entry = gets.strip.downcase #gets the user entry
     
@@ -24,9 +24,9 @@ class CLI
       
       show_list_of_albums
       
-      elsif user_entry == "records_by_year"
-      puts "Your all hung up on her mind filters"
-      record_date_sorter
+      # elsif user_entry == "records_by_year"
+      # puts "Your all hung up on her mind filters"
+      # record_date_sorter
     end
   end
     
