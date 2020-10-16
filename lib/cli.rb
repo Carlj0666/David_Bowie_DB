@@ -14,7 +14,7 @@ class CLI
     sleep(1)
     puts "Type 'records' for a list of my albums"
     sleep(1)
-    # puts "Or type 'records_by_date' for a date sorted list of my albums"
+    puts "Or type 'records_by_year' for a date sorted list of my albums"
     
     user_entry = gets.strip.downcase #gets the user entry
     
@@ -24,9 +24,9 @@ class CLI
       
       show_list_of_albums
       
-      # elsif user_entry == "records_by_date"
-      # puts "Your all hung up on her mind filters"
-      #display sorted list
+      elsif user_entry == "records_by_year"
+      puts "Your all hung up on her mind filters"
+      record_date_sorter
     end
   end
     
@@ -40,7 +40,29 @@ class CLI
       end
     end
       
+      
+    # def record_date_sorter
+    #   date_array = []
+    #   DB_Record.all.each do |record, record_name|
+    #     date_to_integer = record.release_year.to_i
+    #     record_name = record.name
+    #     date_array << {record_name => date_to_integer
+    #     binding.pry
+    #   end
+    #   sorted_dates = date_array.sort
+    #   sorted_dates
+    # end
+      
+      
+    def show_date_sorted_albums
+      self.record_sorter
+      
+      DB_Record.all.each do |record|
+        
       #show sorted list of albums
       #use .sort
+      end
+    end
+    
   
 end
