@@ -12,4 +12,6 @@ class DB_Record
     @@all #info exposed outside of class
   end
   
+  #Make another method or 2 for this class (organize and display by year?)
+  
 end

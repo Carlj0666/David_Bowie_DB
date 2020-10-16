@@ -1,6 +1,6 @@
-class API
+class API #Grabs info from the API and creates a hash
   
-  def self.fetch_albums #class method
+  def self.get_albums #class method
     url = "https://www.theaudiodb.com/api/v1/json/1/searchalbum.php?s=david_bowie" #creates url variable
     uri = URI(url) #define
     response = Net::HTTP.get(uri) #define
@@ -17,6 +17,7 @@ class API
       record.genre = album["strGenre"]
       record.label = album["strLabel"]
     end
+    binding.pry
   end
   
   
