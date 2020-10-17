@@ -33,9 +33,9 @@ class CLI
     def show_list_of_albums
       
       #access the list
-      DB_Record.all.each do |record|
+      DB_Record.all.each.with_index(1) do |record, index|
         #binding.pry
-        puts record.name
+        puts "#{index} - #{record.name}"
       #print each album out
       end
     end
