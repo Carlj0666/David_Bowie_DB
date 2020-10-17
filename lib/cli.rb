@@ -45,11 +45,15 @@ class CLI
     def user_record_selector
       puts "Select a number to access the corresponding album"
       user_index_selection = gets.strip.downcase.to_i - 1
+      
+      if !user_index_selection.includes(0..24)
+      
       current_record_instance = DB_Record.all[user_index_selection]
-      puts "You've chosen #{current_record_instance.name}"
-      # sleep(2)
-      # puts "Press enter for more information on this record"
-      # user_selection = gets.strip.downcase
+      
+      
+      puts "You've chosen: #{current_record_instance.name}"
+      puts "Enter db for more information on this record" #or "something" to quit
+      user_selection = gets.strip.downcase
       # more_record_info = DB_Record.all[current_record_instance]
       #binding.pry
     end
