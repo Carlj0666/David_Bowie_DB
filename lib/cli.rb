@@ -24,6 +24,8 @@ class CLI
       
       show_list_of_albums
       
+      user_record_selector
+      
       # elsif user_entry == "records_by_year"
       # puts "Your all hung up on her mind filters"
       # record_date_sorter
@@ -40,6 +42,17 @@ class CLI
       end
     end
       
+    def user_record_selector
+      puts "Select a number to access the corresponding album"
+      user_index_selection = gets.strip.downcase.to_i - 1
+      current_record_instance = DB_Record.all[user_index_selection]
+      puts "You've chosen #{current_record_instance.name}"
+      # sleep(2)
+      # puts "Press enter for more information on this record"
+      # user_selection = gets.strip.downcase
+      # more_record_info = DB_Record.all[current_record_instance]
+      #binding.pry
+    end
       
     # def record_date_sorter
     #   date_array = []
@@ -53,16 +66,6 @@ class CLI
     #   sorted_dates
     # end
       
-      
-    def show_date_sorted_albums
-      self.record_sorter
-      
-      DB_Record.all.each do |record|
-        
-      #show sorted list of albums
-      #use .sort
-      end
-    end
     
   
 end
