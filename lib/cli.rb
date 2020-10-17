@@ -54,7 +54,7 @@ class CLI
       
   def record_detail_viewer(current_record)
     puts "I've been waiting for you, for such a long time now"
-    puts "Record Name: #{current_record.name} \n Genre: #{current_record.genre} \n Release Year: #{current_record.release_year}"
+    puts "\n Record Name: #{current_record.name} \n Genre: #{current_record.genre} \n Release Year: #{current_record.release_year} \n Label: #{current_record.label} \n Description: #{current_label.description}"
     sleep(1)
     puts "Type 'records' to go back to the list or any key to end"
     user_selection = gets.strip.downcase
