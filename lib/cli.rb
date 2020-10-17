@@ -18,7 +18,9 @@ class CLI
     
     user_entry = gets.strip.downcase #gets the user entry
     
-    if user_entry == "records" #logic for user input choice, chose records or sorted
+    if user_entry != "records" #logic for user input choice, chose records or sorted
+      db_menu
+    else
       puts "This chaos is killing me"
       #display unsorted list
       
@@ -46,16 +48,30 @@ class CLI
       puts "Select a number to access the corresponding album"
       user_index_selection = gets.strip.downcase.to_i - 1
       
-      if !user_index_selection.includes(0..24)
+      if !user_index_selection.between?(0, 24)
+        user_record_selector
+        else
       
-      current_record_instance = DB_Record.all[user_index_selection]
+        current_record_instance = DB_Record.all[user_index_selection]
       
-      
-      puts "You've chosen: #{current_record_instance.name}"
-      puts "Enter db for more information on this record" #or "something" to quit
-      user_selection = gets.strip.downcase
-      # more_record_info = DB_Record.all[current_record_instance]
-      #binding.pry
+        puts "You've chosen: #{current_record_instance}"
+        sleep(2)
+        
+        puts "Type records to go back to the list, or type exit to end the program"
+        user_selection = gets.strip.downcase
+       
+        if user_selection == "records"
+          show_list_of_albums
+          
+          else puts "Type records to go back to the list, or type exit to end the program"
+          user_selection = gets.strip.downcase
+          
+        # if user_index_selection == "exit"
+        
+        # more_record_info = DB_Record.all[current_record_instance]
+        #binding.pry
+      end
+      end
     end
       
     # def record_date_sorter
