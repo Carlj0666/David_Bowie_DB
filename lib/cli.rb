@@ -20,13 +20,13 @@ class CLI
       db_menu
     else
       puts "This chaos is killing me"
-      #display unsorted list
       
       show_list_of_albums
       
       user_record_selector
       
-
+      record_detail_viewer
+      
     end
   end
     
@@ -45,13 +45,31 @@ class CLI
       user_record_selector
     
     else
-      binding.pry
       current_record_instance = DB_Record.all[user_index_selection]
       puts "You've chosen: #{current_record_instance.name}"
       
+      record_detail_viewer(current_record_instance)
     end
   end
       
+  def record_detail_viewer(current_record)
+    puts "I've been waiting for you, for such a long time now"
+    puts "Record Name: #{current_record.name} \n Genre: #{current_record.genre} \n Release Year: #{current_record.release_year}"
+    sleep(1)
+    puts "Type 'records' to go back to the list or any key to end"
+    user_selection = gets.strip.downcase
+    
+    if user_selection != "records"
+      puts "I dream of something like that"
+      record_detail_viewer(current_record)
+    else
+      #show_list_of_albums
+      #user_record_selector
+      #record_detail_viewer
+    end
+  end
+  
+  #NEED METHOD TO END PROGRAM or ESCAPE LOGIC
   
 end
 
