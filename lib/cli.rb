@@ -78,7 +78,7 @@ class CLI
     end
   end
   
-  #NEED METHOD TO END PROGRAM or ESCAPE LOGIC
+  #need to figure out how to ignore letters or not numbers in album selection input
   
 end
 
