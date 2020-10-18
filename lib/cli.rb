@@ -78,7 +78,7 @@ class CLI
     end
   end
   
-  #need to figure out how to ignore letters or not numbers in album selection input
+  #need to figure out how to ignore letters or not numbers in album selection input LINE 47
   
 end
 
