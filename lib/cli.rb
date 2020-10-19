@@ -42,7 +42,11 @@ class CLI
       
   def user_record_selector
     puts "Select a number between 1 - 24 to access the corresponding album.\n"
-    user_index_selection = gets.strip.downcase.to_i - 1
+    binding.pry
+    # if gets.match(/\d/)
+    # user_index_selection = gets.strip.downcase.to_i - 1 
+    #   else
+    #   user_record_selector
       
     if !user_index_selection.between?(0, DB_Record.all.length - 1)
       user_record_selector
@@ -51,6 +55,7 @@ class CLI
       current_record_instance = DB_Record.all[user_index_selection]
       puts "You've chosen: #{current_record_instance.name}\n"
       record_detail_viewer(current_record_instance)
+    # end
     end
   end
       
@@ -78,7 +83,6 @@ class CLI
     end
   end
   
-  #need to figure out how to ignore letters or not numbers in album selection input LINE 47
-  
+  #need to figure out how to ignore letters or not numbers in album 
 end
 
