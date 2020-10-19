@@ -42,13 +42,11 @@ class CLI
       
   def user_record_selector
     puts "Select a number between 1 - 24 to access the corresponding album.\n"
-    binding.pry
-    # if gets.match(/\d/)
-    # user_index_selection = gets.strip.downcase.to_i - 1 
-    #   else
-    #   user_record_selector
-      
-    if !user_index_selection.between?(0, DB_Record.all.length - 1)
+    #binding.pry
+
+    user_index_selection = gets.strip.downcase.to_i - 1 
+
+    if !user_index_selection.between?(0, DB_Record.all.length - 1) && !user_index_selection.include?(/\D/) #WORKING THIS LINE
       user_record_selector
     
     else
@@ -75,7 +73,7 @@ class CLI
       record_detail_viewer
       
     elsif user_selection == "exit"
-      puts """If it works, its out of date."" ― David Bowie"
+      puts '"If it works, its out of date."' "― David Bowie" 
       exit!
     else
       puts "I dream of something like that.\n"
