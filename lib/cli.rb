@@ -13,11 +13,12 @@ class CLI
   def db_menu
     
     puts "Type 'records' for a list of my albums, or type 'exit' to quit."
+    puts "\n"
     
     user_entry = gets.strip.downcase #gets the user entry
     
     if user_entry == "exit"
-      puts "goodbye"
+      puts '"I don\'t know where I\'m going from here, but I promise it won\'t be boring."' "\n- David Bowie" 
       
     elsif user_entry != "records" #logic for user input choice, chose records or sorted
       puts "I ask for so little. Let's start from the beginning."
