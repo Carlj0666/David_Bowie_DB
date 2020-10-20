@@ -1,20 +1,20 @@
 class CLI
   
   def start #start instance method
-    puts "The David Bowie DB is happening now, not tomorrow...".black.on_green #prints welcome messsage
+    puts "The David Bowie DB is happening now, not tomorrow...".black.on_light_blue.bold #prints welcome messsage
     puts "\n"
     sleep(3) #waits to run API for (seconds)
     API.get_albums #runs API.rb to grab info from API and makes DB_Record instances
     puts "Hello, I'm the machine spirit of David Bowie come to share my albums with you."
-    puts "\n"
+    puts "\n".black.on_green
     sleep(1)
     self.db_menu
   end
   
   def db_menu
     
-    puts "Type 'records' for a list of my albums, or type 'exit' to quit."
-    puts "\n"
+    puts "Type 'records' for a list of my albums, or type 'exit' to quit.".black.on_light_blue.bold
+    puts "\n".black.on_green
     
     user_entry = gets.strip.downcase #gets the user entry
     
@@ -34,7 +34,7 @@ class CLI
       puts '"This chaos is killing me..."'
       sleep(3)
       puts "\n"
-      puts "Select a number between 1 - 24 to access the corresponding album."
+      puts "Select a number between 1 - 24 to access the corresponding album.".black.on_light_blue.bold
       sleep(5)
       puts "\n"
       show_list_of_albums
@@ -55,7 +55,7 @@ class CLI
       
   def user_record_selector
     
-    puts "Select a number between 1 - 24 to access the corresponding album."
+    puts "Select a number between 1 - 24 to access the corresponding album.".black.on_light_blue.bold
     puts "\n"
     
     user_index_selection = gets.strip.downcase.to_i - 1 
