@@ -1,7 +1,7 @@
 class CLI
   
   def start #start instance method
-    puts "The David Bowie DB is happening now, not tomorrow..." #prints welcome messsage
+    puts "The David Bowie DB is happening now, not tomorrow...".black.on_green #prints welcome messsage
     puts "\n"
     sleep(3) #waits to run API for (seconds)
     API.get_albums #runs API.rb to grab info from API and makes DB_Record instances
