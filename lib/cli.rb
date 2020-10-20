@@ -2,6 +2,7 @@ class CLI
   
   def start #start instance method
     puts "The David Bowie DB is happening now, not tomorrow...".black.on_light_blue.bold #prints welcome messsage
+    sleep(2)
     puts "MMMMMMMMMMMMMMMMMMMMMWNNMMWXx;.,xNMMWNNMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMNOolOKkc.     ;xXXo:kNMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMWNKxl'  .,.          .,.  ,oOXWMMMMMMMMMMMMMMM
