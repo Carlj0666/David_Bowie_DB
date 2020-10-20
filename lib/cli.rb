@@ -18,7 +18,7 @@ class CLI
     user_entry = gets.strip.downcase #gets the user entry
     
     if user_entry == "exit"
-      puts '"I don\'t know where I\'m going from here, but I promise it won\'t be boring."' "\n- David Bowie" 
+      puts '"If it works it\'s out of date"' "\n- David Bowie" 
       
     elsif user_entry != "records" #logic for user input choice, chose records or sorted
       puts "I ask for so little. Let's start from the beginning."
@@ -68,6 +68,7 @@ class CLI
   def record_detail_viewer(current_record)
     puts "I've been waiting for you, for such a long time now.\n"
     puts "Artist: Yours Truly db \n Record Name: #{current_record.name} \n Genre: #{current_record.genre} \n Release Year: #{current_record.release_year} \n Label: #{current_record.label} \n Description: #{current_record.description}\n"
+    puts "\n"
     sleep(1)
 
   end
