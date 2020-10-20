@@ -68,7 +68,8 @@ class CLI
     
     else
       current_record_instance = DB_Record.all[user_index_selection]
-      puts "You've chosen: #{current_record_instance.name}\n"
+      puts "You've chosen: #{current_record_instance.name}"
+      puts"\n"
       record_detail_viewer(current_record_instance)
     end
   end
@@ -77,8 +78,6 @@ class CLI
   def record_detail_viewer(current_record)
     puts "Artist: db \n Record Name: #{current_record.name} \n Genre: #{current_record.genre} \n Release Year: #{current_record.release_year} \n Label: #{current_record.label} \n Description: #{current_record.description}\n"
     puts "\n"
-    sleep(1)
-
   end
   
 end
