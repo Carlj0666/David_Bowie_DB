@@ -2,11 +2,58 @@ class CLI
   
   def start #start instance method
     puts "The David Bowie DB is happening now, not tomorrow...".black.on_light_blue.bold #prints welcome messsage
+    puts "MMMMMMMMMMMMMMMMMMMMMWNNMMWXx;.,xNMMWNNMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNOolOKkc.     ;xXXo:kNMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMWNKxl'  .,.          .,.  ,oOXWMMMMMMMMMMMMMMM
+MMMMMMMMMMMWXxc'.                          .;o0WMMMMMMMMMMMM
+MMMMMMMMMMWk'                                 .lXMMMMMMMMMMM
+MMMMMMMMMWx.                                    cXMMMMMMMMMM
+MMMMMMMMMX;                                     .kMMMMMMMMMM
+MMMMMMMMMO.                                      oWMMMMMMMMM
+MMMMMMMMM0'                                      dWMMMMMMMMM
+MMMMMMMMMNc                                     'OMMMMMMMMMM
+MMMMMMMMMMO.                                    oNMMMMMMMMMM
+MMMMMMMMMMN:     'clllc:;'.          .;lc;.    .OMMMMMMMMMMM
+MMMMMMMMMMWl   .dNMMMMMMNx.         'xNMMW0,   ,KMMMMMMMMMMM
+MMMMMMMMMMWd.  oNMMMMMMWx.        .lKMMMMMMO.  ;XMMMMMMMMMMM
+MMMMMMMMMMMx. '0MMMMMMWx.        ,kWMMMMMMMN:  :XMMMMMMMMMMM
+MMMMMMMMMMMk. :XMMMMMWx.       .oXMMMMMMMMMWd  cNMMMMMMMMMMM
+MMMMMMMMMMMk. lWMMMMWd.      ;oOWMMMMMMMMMMMk. cNMMMMMMMMMMM
+MMMMMMMMMMMk. oWMMMNd.     .dXWWX0kONMMMMMMMO. lNMMMMMMMMMMM
+MMMMMMMMW0l'..xMMMNd.     .:l:;,..c0WMMMMMMMK; .:xNMMMMMMMMM
+MMMMMMMMO'.lk0NMMNo.            'xNMMMMMMMMMWKOx,.oNMMMMMMMM
+MMMMMMMMd.;XMMMMNo.   .'.    .'lKMMM(( ))MMMMMMWd.;XMMMMMMMM
+MMMMMMMMk.,0MMMWOc:ox0XO,   ;ONWMMMMMMMMMMMMMMMWl cNMMMMMMMM
+MMMMMMMM0'.kMMMMWWMMMMX:  .dNMMMMMMMMMMMMMMMMMMX:.oWMMMMMMMM
+MMMMMMMMNl.,xk0WMMMMMNl .cKWMMMMMMMMMMMMMMMMKkkc.,0MMMMMMMMM
+MMMMMMMMMNx:'..kMMMMNo.,kWMMMMMMMMMMMMMMMMMX; .;l0WMMMMMMMMM
+MMMMMMMMMMMWO. :XMMWx;dXMMMMMMMMMMMMMMMMMMWo. oNMMMMMMMMMMMM
+MMMMMMMMMMMWd.  lNWKxKWMMMMMMMMMMMMMMMMMMWx.  cNMMMMMMMMMMMM
+MMMMMMMMMMM0,    cKNWMMMMMMMMMMMMMMMMMMMNd.   .kMMMMMMMMMMMM
+MMMMMMMMMMK;      ,kNMMMMMMMMMMMMMMMMMW0:.     ,OWMMMMMMMMMM
+MMMMMMMMMXo,;c;.   .;dKWMMMMMMMMMMMWXk:.    'c;'c0WMMMMMMMMM
+MMMMMMMMMWNWWNl. 'l;  .;ldkO00OOkdl:'. .;;. ,0WNNNWMMMMMMMMM
+MMMMMMMMMMMMWKdokxc.;xOdc;,,,,,,,;cokOl..cddokNMMMMMMMMMMMMM
+MMMMMMMMMMMMMWXk:.;xNMMMMWWNXXNNNWMMMMW0c..l0NMMMMMMMMMMMMMM
+MMMMMMMMMMNKxc,'ckNMMMMMMMMMMMMMMMMMMMMMW0o,.;oONWMMMMMMMMMM
+MMMMMWXOdc;',ckXWMMMMMMMMMMMMMMMMMMMMMMMMMMNOo;',:okKNWMMMMM
+NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
+,.      '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN:       .'
+        .oXWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNk'         
+         .,;:loxOKNWMMMMMMMMMMMMMMMMMMMMWX0kdlc;,.          
+          ckxoc;;,,:xNMMMMMMMMMMMMMMMW0l;,,;:ldkd.          
+          .xWMMWNKk,.oWMMMMMMMMMMMMMM0'.o0XWMMMK:           
+           .lXMMMMMO,cXMMMMMMMMMMMMMWx'oNMMMMNk,            
+             'o0NMMWNNWMMMMMMMMMMMMMMNXNMMWXx;.             
+               .,lx0XNWMMMMMMMMMMMMMWWNKko:.                
+                    .';:cllooooollcc;,..                    
+                                                            
+".light_blue.on_light_red
     puts "\n"
     sleep(3) #waits to run API for (seconds)
     API.get_albums #runs API.rb to grab info from API and makes DB_Record instances
     puts "Hello, I'm the machine spirit of David Bowie come to share my albums with you."
-    puts "\n".black.on_green
+    puts "\n"
     sleep(1)
     self.db_menu
   end
