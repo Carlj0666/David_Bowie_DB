@@ -22,7 +22,7 @@ MMMMMMMMMMMk. lWMMMMWd.      ;oOWMMMMMMMMMMMk. cNMMMMMMMMMMM
 MMMMMMMMMMMk. oWMMMNd.     .dXWWX0kONMMMMMMMO. lNMMMMMMMMMMM
 MMMMMMMMW0l'..xMMMNd.     .:l:;,..c0WMMMMMMMK; .:xNMMMMMMMMM
 MMMMMMMMO'.lk0NMMNo.            'xNMMMMMMMMMWKOx,.oNMMMMMMMM
-MMMMMMMMd.;XMMMMNo.   .'.    .'lKMMM(( ))MMMMMMWd.;XMMMMMMMM
+MMMMMMMMd.;XMMMMNo.   .'.    .'lKMMM{( )+MMMMMMWd.;XMMMMMMMM
 MMMMMMMMk.,0MMMWOc:ox0XO,   ;ONWMMMMMMMMMMMMMMMWl cNMMMMMMMM
 MMMMMMMM0'.kMMMMWWMMMMX:  .dNMMMMMMMMMMMMMMMMMMX:.oWMMMMMMMM
 MMMMMMMMNl.,xk0WMMMMMNl .cKWMMMMMMMMMMMMMMMMKkkc.,0MMMMMMMMM
@@ -67,11 +67,31 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
     
     if user_entry == "exit" #option to exit in main menu
       puts "\n"
+      sleep(1)
       puts '"If it works it\'s out of date"' "\n- David Bowie" 
+      sleep(3)
+      puts "                                                            
+                     ..    ..''.                            
+                  .cxk:   ;OXNNXk,   :xo,.                  
+                ;xXWMK,  .kMMMMMMk.  ;XMN0l.                
+              ,kNMMMMXc   :0WWWW0:   lNMMMWKl.              
+              ;kNMMMMM0;   .,;;,.   :KMMMMWXd.              
+                'lkXWMMNx;.      .:kNMMWKxc.                
+                   .;lxOKK0OxxxxO0XKOdl,.                   
+                        ..',;;;;,'..                        
+                                                            
+                                                            
+                                                            
+            .;.   ';.                 .;.  ,;.              
+            ,0o. ;ONk' .:kxc...'lkx,  cKo .xKo.             
+             ,:. .:c;.  .:'     .,:. .;c:. .:,              
+                                                            
+                                                            
+".light_blue.on_light_red
       
     elsif user_entry != "records" #logic for user input choice, chose records or sorted
       
-      puts "I ask for so little. Let's start from the beginning."
+      puts '"I ask for so little. Let\'s start from the beginning."'
       puts "\n"
       sleep(2)
       db_menu
