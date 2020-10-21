@@ -1,6 +1,6 @@
 # David Bowie DB
 
-This is an app to view the David Bowie DataBase of db's catalog of records.
+This is an app which can be used to view the David Bowie DataBase of db's catalog of records.
 
 Optional installation steps
 *For debugging this program requires pry, type: gem install pry
@@ -22,4 +22,6 @@ Navigation - Press Enter after typing your choice
 2) Select a number between 1 - 24 to access the corresponding album and display the album details
 3) Type 'records' for a list of my albums, or type 'exit' to quit.
 
- 
+Contributing
+Thanks yo so much for your interesting in contributing to this project. Please check back later as more becomes available in terms of how you can contribute.
+
