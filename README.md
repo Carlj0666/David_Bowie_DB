@@ -23,5 +23,5 @@ Navigation - Press Enter after typing your choice
 3) Type 'records' for a list of my albums, or type 'exit' to quit.
 
 Contributing
-Thanks yo so much for your interesting in contributing to this project. Please check back later as more becomes available in terms of how you can contribute.
+Thanks yo so much for your interest in contributing to this project. Please check back later as more becomes available in terms of how you can contribute.
 
