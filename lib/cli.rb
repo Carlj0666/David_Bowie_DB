@@ -123,7 +123,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
       
   def user_record_selector
     
-    puts "Select a number between 1 - 24 to access the corresponding album.".black.on_light_blue.bold
+    puts "Select a number between 1 - 25 to access the corresponding album.".black.on_light_blue.bold
     puts "\n"
     
     user_index_selection = gets.strip.downcase.to_i - 1 
