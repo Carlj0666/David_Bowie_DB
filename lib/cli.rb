@@ -1,7 +1,7 @@
 class CLI
   
   def start #start instance method
-    puts "The David Bowie DB is happening now, not tomorrow...".black.on_light_blue.bold #prints welcome messsage
+    puts "The David Bowie DB is happening now, not tomorrow...".black.on_light_blue.bold
     sleep(2)
     puts "MMMMMMMMMMMMMMMMMMMMMWNNMMWXx;.,xNMMWNNMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMNOolOKkc.     ;xXXo:kNMMMMMMMMMMMMMMMMMMM
@@ -52,7 +52,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
 ".light_blue.on_light_red
     puts "\n"
     sleep(3) #waits to run API for (seconds)
-    API.get_albums #runs API.rb to grab info from API and makes DB_Record instances
+    API.get_albums
     puts "Hello, I'm the machine spirit of David Bowie come to share my albums with you."
     puts "\n"
     sleep(1)
@@ -66,7 +66,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
     
     user_entry = gets.strip.downcase #gets the user entry
     
-    if user_entry == "exit" #option to exit in main menu
+    if user_entry == "exit"
       puts "\n"
       sleep(1)
       puts '"If it works it\'s out of date"' "\n- David Bowie" 
@@ -90,7 +90,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
                                                             
 ".light_blue.on_light_red
       
-    elsif user_entry != "records" #logic for user input choice, chose records or sorted
+    elsif user_entry != "records"
       
       puts '"I ask for so little. Let\'s start from the beginning."'
       puts "\n"
@@ -115,8 +115,8 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
   end
     
   def show_list_of_albums
-    DB_Record.all.each.with_index(1) do |record, index| #iterate through indexes of the DB_Record array
-    puts "#{index} - #{record.name}"#print each album out
+    DB_Record.all.each.with_index(1) do |record, index|
+    puts "#{index} - #{record.name}"
     end
   end
       
