@@ -1,8 +1,8 @@
 class API
   
-  def self.get_albums #class method
+  def self.get_albums
     url = "https://www.theaudiodb.com/api/v1/json/1/searchalbum.php?s=david_bowie"
-    uri = URI(url) #define
+    uri = URI(url)
     response = Net::HTTP.get(uri)
     hash = JSON.parse(response)
     

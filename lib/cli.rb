@@ -1,6 +1,6 @@
 class CLI
   
-  def start #start instance method
+  def start
     puts "The David Bowie DB is happening now, not tomorrow...".black.on_light_blue.bold
     sleep(2)
     puts "MMMMMMMMMMMMMMMMMMMMMWNNMMWXx;.,xNMMWNNMMMMMMMMMMMMMMMMMMMMM
@@ -51,7 +51,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
                                                             
 ".light_blue.on_light_red
     puts "\n"
-    sleep(3) #waits to run API for (seconds)
+    sleep(3)
     API.get_albums
     puts "Hello, I'm the machine spirit of David Bowie come to share my albums with you."
     puts "\n"
@@ -64,7 +64,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
     puts "Type 'records' for a list of my albums, or type 'exit' to quit.".black.on_light_blue.bold
     puts "\n".black.on_green
     
-    user_entry = gets.strip.downcase #gets the user entry
+    user_entry = gets.strip.downcase
     
     if user_entry == "exit"
       puts "\n"
@@ -102,7 +102,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
       puts '"This chaos is killing me..."'
       sleep(3)
       puts "\n"
-      puts "Select a number between 1 - 24 to access the corresponding album.".black.on_light_blue.bold
+      puts "Select a number between 1 - 25 to access the corresponding album.".black.on_light_blue.bold
       sleep(5)
       puts "\n"
       show_list_of_albums

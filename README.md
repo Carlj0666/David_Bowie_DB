@@ -17,9 +17,9 @@ This is an app which can be used to view the David Bowie DataBase of db's catalo
    
 **Navigation - Press Enter after typing your choice**
 *If an incorrect choice is made, you will be brought back to choose again.
-*The program is built to eliminate accidental chaacters typed after your numerical selection.
+*The program is built to eliminate accidental characters typed after your numerical selection.
 1) Type 'records' for a list of my albums, or type 'exit' to quit the program.
-2) Select a number between 1 - 24 to access the corresponding album and display the album details
+2) Select a number between 1 - 25 to access the corresponding album and display the album details
 3) Type 'records' for a list of my albums, or type 'exit' to quit.
 
 **Contributing**
