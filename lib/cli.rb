@@ -102,7 +102,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
       puts '"This chaos is killing me..."'
       sleep(3)
       puts "\n"
-      puts "Select a number between 1 - 51 to access the corresponding album.".black.on_light_blue.bold
+      puts "Select a number between 1 - 50 to access the corresponding album.".black.on_light_blue.bold
       sleep(5)
       puts "\n"
       show_list_of_albums
@@ -123,7 +123,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
       
   def user_record_selector
     
-    puts "Select a number between 1 - 51 to access the corresponding album.".black.on_light_blue.bold
+    puts "Select a number between 1 - 50 to access the corresponding album.".black.on_light_blue.bold
     puts "\n"
     
     user_index_selection = gets.strip.downcase.to_i - 1 

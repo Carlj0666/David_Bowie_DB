@@ -9,6 +9,8 @@ class API
     
     albums_array = hash["results"]
     
+    albums_array.shift
+    
     albums_array.each do |album|
       
       record = DB_Record.new
@@ -18,8 +20,6 @@ class API
       record.description = album["collectionViewUrl"]
       record.genre = album["primaryGenreName"]
       record.label = album["copyright"]
-      
-      
     end
     
   end
