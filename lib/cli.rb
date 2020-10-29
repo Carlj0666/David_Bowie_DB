@@ -49,7 +49,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
                .,lx0XNWMMMMMMMMMMMMMWWNKko:.                
                     .';:cllooooollcc;,..                    
                                                             
-".light_blue.on_light_red
+".white
     puts "\n"
     sleep(3)
     API.get_albums
@@ -88,7 +88,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
              ,:. .:c;.  .:'     .,:. .;c:. .:,              
                                                             
                                                             
-".light_blue.on_light_red
+".white
       
     elsif user_entry != "records"
       
