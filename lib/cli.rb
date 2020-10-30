@@ -144,7 +144,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
       
       
   def record_detail_viewer(current_record)
-    puts "Artist: db \n Record Name: #{current_record.name} \n Genre: #{current_record.genre} \n Release Date/Time: #{current_record.release_year} \n Label: #{current_record.label} \n Description: #{current_record.description}\n"
+    puts "Artist: db \n Record Name: #{current_record.name} \n Genre: #{current_record.genre} \n Release Date: #{current_record.release_year} \n Label: #{current_record.label} \n Description: #{current_record.description}\n"
     puts "\n"
   end
   
