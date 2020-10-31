@@ -18,7 +18,6 @@ class API
       record.name = album["collectionName"]
       record.release_year = album["releaseDate"]
       record.release_year = record.release_year[/[^-]+/]
-      #binding.pry
       record.description = album["collectionViewUrl"]
       record.genre = album["primaryGenreName"]
       record.label = album["copyright"]
