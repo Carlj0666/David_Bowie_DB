@@ -61,7 +61,7 @@ NKOdc,. .:x0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl. .':lxOKN
   
   def db_menu
     
-    puts "Type 'records' for a list of my albums, or type 'exit' to quit.".black.on_light_blue.bold
+    puts "Type 'records' for a list of my albums sorted by release date, or type 'exit' to quit.".black.on_light_blue.bold
     puts "\n".black.on_green
     
     user_entry = gets.strip.downcase

@@ -10,7 +10,6 @@ This is an app which can be used to view the David Bowie DataBase of db's catalo
 2) Un-comment line 6 in bin/run
 3) Comment line 2 in environment
 4) Un-comment line 3 in environment
-5) 
 
 **To Install and start the program**
 1) Copy and paste to following into your terminal: 
