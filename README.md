@@ -5,6 +5,12 @@ This is an app which can be used to view the David Bowie DataBase of db's catalo
 **Optional installation steps**
 *For debugging this program requires pry, type: gem install pry
 *To make sure the program looks good as Bowie would have had it, this program requires Colorize, type: gem install colorize
+**Experimental mode: You can run experimental mode on this program, which extends the features by adding sorting capability so you can view records sorted by release year. The steps include:
+1) Comment line 5 in bin/run
+2) Un-comment line 6 in bin/run
+3) Comment line 2 in environment
+4) Un-comment line 3 in environment
+5) 
 
 **To Install and start the program**
 1) Copy and paste to following into your terminal: 
