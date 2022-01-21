@@ -12,6 +12,13 @@ This is an app which can be used to view the David Bowie DataBase of db's catalo
 4) Un-comment line 3 in environment
 
 ## To Install and start the program
+You can install and run this app from your terminal if you don't use an IDE.
+A) If you are on Mac OS (from Mavericks 10.9+), simply go to your search bar and type terminal
+press enter
+B) Then once in the Terminal, type git --version
+press enter
+
+Proceed:
 1) Copy and paste to following into your terminal: 
    git clone git@github.com:Carlj0666/David_Bowie_DB.git
    press Enter
